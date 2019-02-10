@@ -7,11 +7,6 @@ import { newSimpleTable } from './Jsons/simpleTable.js';
     1: [function (require, module, exports) {
         'use strict';
 
-        // const {MDCSlider} = require('@material/slider/dist/mdc.slider');
-        // import {MDCSlider} from '@material/slider';
-        // const slider = new MDCSlider(document.querySelector('.mdc-slider'));
-        // slider.listen('MDCSlider:change', () => console.log(`Value changed to ${slider.value}`));
-
         var data = newSimpleTable
 
         window.addEventListener("load", () => {

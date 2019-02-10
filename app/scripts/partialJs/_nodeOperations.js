@@ -1,8 +1,8 @@
-export function newNodeOperations(dom) {
+export function newNodeOperations(data) {
     // _NodeOperations.js
 
-    var DOMtree = {'saluto':'hello world!'};
+    var saluto = data.table[0].saluto
 
-    return DOMtree.saluto
+    return saluto
 
 }
