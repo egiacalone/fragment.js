@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["partialJs/_nodeOperations.js"],"sourcesContent":["export function newNodeOperations(dom) {\n    // _NodeOperations.js\n\n    var DOMtree = { 'saluto': 'hello world!' };\n\n    return DOMtree.saluto;\n}"],"file":"_nodeOperations.js"}

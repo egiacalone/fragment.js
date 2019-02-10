@@ -1,0 +1,14 @@
+{
+  "name": "material-components-web",
+  "homepage": "https://github.com/material-components/material-components-web",
+  "version": "0.40.1",
+  "_release": "0.40.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.40.1",
+    "commit": "667a89f57f052199c082fd74e4344958f3ebeb8f"
+  },
+  "_source": "https://github.com/material-components/material-components-web.git",
+  "_target": "^0.40.1",
+  "_originalSource": "material-components-web"
+}
