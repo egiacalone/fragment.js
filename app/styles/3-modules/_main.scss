@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,900);
+body {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin: auto;
+  color: rgba(0, 0, 0, 0.87);
+  background: #efefef;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 7.5em;
+  width: 100%;
+  background: #fff;
+  z-index: 100;
+}
+
+.top-bar {
+  height: 0.5em;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.scroll {
+  height: 0.5em;
+  width: 0%;
+  background: #F44645;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15), 2px 4px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: -0.5em;
+}
+
+section {
+  padding: 0.1em 1em 1em 1em;
+  margin-bottom: 2em;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+body {
+  padding-top: 9em;
+}

@@ -161,7 +161,7 @@ gulp.task('wiredep', function () {
 });
 
 gulp.task('serve', () => {
-  runSequence(['clean', 'wiredep'], ['inject','views', 'styles', 'scripts', 'Json'], () => {
+  runSequence(['clean', 'wiredep'], ['views', 'styles', 'scripts', 'Json'], () => {
     browserSync.init({
       notify: false,
       port: 9000,

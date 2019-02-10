@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html>
-  <head>
-<!-- bower:css -->
-  <link rel="stylesheet" href="../bower_components/dragula.js/dist/dragula.css">
-  <link rel="stylesheet" href="../bower_components/slick-carousel/slick/slick.css">
-  <!-- endinject -->
-  <!-- inject:css -->
-  <!-- endinject -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueprint: Fragment</title>
+    <meta name="description" content="Blueprint: fragment-project">
+    <meta name="keywords" content="blueprint, template, html, css, menu, responsive, gulp, bower">
+    <meta name="author" content="Enrico Giacalone">
+    <meta name="theme-color" content="#1C1D22">
+    <link rel="icon" sizes="192x192" href="https://material.io/static/images/simple-lp/favicons/components-192x192.png">
+    <link rel="shortcut icon" href="https://material.io/static/images/simple-lp/favicons/components-72x72.png">
+    <!-- build:css styles/custom/custom.css-->
+    <link rel="manifest" href="/manifest.json">
+    <!-- endbuild-->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/dragula.js/dist/dragula.css">
+    <link rel="stylesheet" href="../bower_components/slick-carousel/slick/slick.css">
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="styles/main.css"">
+    <!-- endinject -->
   </head>
-  <body>
-    <div id="limited-scope">
-      <div data-fragment="layouts/recursive.html"></div>
-    </div>
-    <div data-fragment="layouts/fragment.html"></div>
-    <div data-fragment-json="layouts/fragment.json"></div>
-    <div data-fragment="layouts/mustache_fragment.html">{"adjective":"fantastic"}</div>
-    <div data-fragment="layouts/mustache_fragment.html"
-      data-fragment-json="layouts/fragment.json"
-      data-fragment-media="(max-width: 1000px)"></div>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<body>
 
-  </body>
-  <!-- bower:js -->
-  <script src="../bower_components/jquery/dist/jquery.js"></script>
-  <script src="../bower_components/dragula.js/dist/dragula.js"></script>
-  <script src="../bower_components/popper.js/dist/umd/popper.js"></script>
-  <script src="../bower_components/slick-carousel/slick/slick.js"></script>
-  <script src="../bower_components/fragment/fragment.js"></script>
-  <!-- endinject -->
-  <!-- inject:js -->
-  <script src="scripts/main.js"></script>
-  <script src="scripts/Jsons/simpleTable.js"></script>
-  <script src="scripts/partialJs/_nodeOperations.js"></script>
-  <!-- endinject -->
-  <script>
-      fragment = {
-        ready: function(num_fragments) {
-          console.log(num_fragments + " fragments were loaded");
-        }
-      };
-    </script>
+  <div id="limited-scope">
+    <div data-fragment="layouts/recursive.html"></div>
+  </div>
+  <div data-fragment="layouts/fragment.html"></div>
+  <div data-fragment-json="layouts/fragment.json"></div>
+  <div data-fragment="layouts/mustache_fragment.html">{"adjective":"fantastic"}</div>
+  <div data-fragment="layouts/mustache_fragment.html" data-fragment-json="layouts/fragment.json"
+    data-fragment-media="(max-width: 1000px)"></div>
+
+    <div data-fragment="layouts/example-fragment/header.html"></div>
+    <div data-fragment="layouts/example-fragment/content.html"></div>
+
+</body>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<!-- bower:js -->
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/dragula.js/dist/dragula.js"></script>
+<script src="../bower_components/popper.js/dist/umd/popper.js"></script>
+<script src="../bower_components/slick-carousel/slick/slick.js"></script>
+<script src="../bower_components/fragment/fragment.js"></script>
+<!-- endinject -->
+<!-- inject:js -->
+<script type='module' src="scripts/main.js"></script>
+<script type='module' src="scripts/Jsons/simpleTable.js"></script>
+<script type='module' src="scripts/partialJs/_nodeOperations.js"></script>
+<!-- endinject -->
+
+<script>
+  fragment = {
+    ready: function (num_fragments) {
+      console.log(num_fragments + " fragments were loaded");
+    }
+  };
+</script>
 </html>
